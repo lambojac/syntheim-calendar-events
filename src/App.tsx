@@ -37,6 +37,7 @@ function App() {
   });
 
   return (
+    <div className='calendar-container'>
     <ScheduleComponent
       currentView="Month"
       selectedDate={new Date()}
@@ -44,6 +45,7 @@ function App() {
     >
       <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
     </ScheduleComponent>
+    </div>
   );
 }
 
